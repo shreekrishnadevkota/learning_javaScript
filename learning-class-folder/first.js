@@ -1,4 +1,4 @@
-console.log("hello world");
+/*console.log("hello world");
 
 name = "shree";
 console.log(name);
@@ -17,7 +17,7 @@ console.log(a);
 
 bull= true;
 console.log(bull);
-console.log(typeof bull);
+console.log(typeof bull);*/
 
 
 // prastice question
@@ -176,7 +176,7 @@ console.log(topper);*/
 
 Example Array Provided: [87, 93, 64, 99, 86] */
 
-let n = prompt("enter a number : ");
+/*let n = prompt("enter a number : ");
 
 let arr = [];
 
@@ -198,7 +198,54 @@ let factorial = arr.reduce((res, curr) => {
     return res * curr;
 });
 
-console.log("factorial = ", factorial);
+console.log("factorial = ", factorial);*/
+
+/*
+"Create a new button element. Give it a text “click me”, background color of red & text color of white. Insert the button as the first element inside the body tag."
+
+let newBtn = document.createElement("button");
+newBtn.innerText="click me ";
+
+newBtn.style.color = "white";
+newBtn.style.backgroundColor = "red";
+
+document.querySelector("body").prepend(newBtn);
+
+*/
+
+/*"Create a <p> tag in html, give it a class & some styling. Now create a new class in CSS and try to append this class to the <p> element. Did you notice, how you overwrite the class name when you add a new one? Solve this problem using classList." */
+
+// let para = document.querySelector("p");
+
+// para.classList.add("newClass");
+
+
+
+
+// create a button and code it like this if we click once it should enable dark mode and if we click twice it should change the mode to light using java script event handeling
+
+let modeBtn = document.querySelector("#mode")
+let currMode = "light";
+let body = document.querySelector("body");
+
+modeBtn.addEventListener("click", () => {
+    if (currMode === "light") {
+        currMode = "dark";
+        body.classList.add("dark");
+        body.classList.remove("light");
+    }else {
+        currMode = "light";
+        body.classList.add("light");
+        body.classList.remove("dark");
+
+    }
+    console.log(currMode)
+    
+})
+
+
+
+
 
 
 

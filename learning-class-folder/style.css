@@ -1,0 +1,16 @@
+.content{
+    color: red;
+}
+
+.newClass {
+    background-color: green;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
