@@ -98,12 +98,107 @@ for(let num= 0; num<=100; num++){
 
 // question : Create a game where you start with any random game number. Ask the user to keep guessing the game number until the user enters correct value.
 
-let gameNum = 25;
+/*let gameNum = 25;
 
 let userNum = prompt("Guess the game number : ");
 
-while(userNum !== gameNum) { //game
+while(userNum != gameNum) { //game
+    userNum=prompt("you enter the wrong number guess again ")
     
 }
 
-console.log("congratualtions, you entered the right number");
+console.log("congratualtions, you entered the right number");*/
+
+/*The practice question shown in the video is:
+
+### Practice Question 1
+
+> **Prompt the user to enter their full name. Generate a username for them based on the input. Start the username with `@`, followed by their full name, and ending with the full name length.**
+> * **Example:**
+> * **Input:** `shradhakhapra`
+> * **Generated Username:** `@shradhakhapra13`*/
+
+/*let fullname;
+
+fullname= prompt("enter your full name");
+
+let output = `@${fullname}${fullname.length}`
+
+console.log(output);*/
+
+
+
+
+// Array -----------------------------------------
+
+/*let place = ["tokha", "jhor", "samakushi"];
+
+for (let p of place){
+    console.log(p);
+}*/
+
+
+// find the average of the marks given in the string
+
+/*let marks = [85, 97, 44, 37, 76, 60];
+
+let sum = 0;
+
+for (let val of marks) {
+    sum += val;
+}
+
+let avg = sum / marks.length;
+console.log(`avg marks of the class = ${avg}`);*/
+
+
+
+/* question: For a given array with prices of 5 items $\rightarrow$ [250, 645, 300, 900, 50]
+All items have an offer of 10% OFF on them. Change the array to store the final price after applying the offer.*/
+
+
+/* We are given an array of marks of students. Filter out the marks of students that scored 90+."
+
+Example Array Provided: [87, 93, 64, 99, 86]*/
+
+/*let marks = [60,98,73,92,95]
+
+let topper = marks.filter((val) => {
+    return val>90;
+})
+
+console.log(topper);*/
+
+
+
+
+/*"We are given an array of marks of students. Filter out the marks of students that scored 90+."
+
+Example Array Provided: [87, 93, 64, 99, 86] */
+
+let n = prompt("enter a number : ");
+
+let arr = [];
+
+for (let i = 1; i <= n; i++) {
+    arr[i - 1] = i;
+}
+
+console.log(arr);
+
+// 1. Calculate the sum of all numbers using reduce
+let sum = arr.reduce((res, curr) => {
+    return res + curr;
+});
+
+console.log("sum = ", sum);
+
+// 2. Calculate the product (factorial) of all numbers using reduce
+let factorial = arr.reduce((res, curr) => {
+    return res * curr;
+});
+
+console.log("factorial = ", factorial);
+
+
+
