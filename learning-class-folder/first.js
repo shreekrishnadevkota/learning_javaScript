@@ -224,7 +224,7 @@ document.querySelector("body").prepend(newBtn);
 
 // create a button and code it like this if we click once it should enable dark mode and if we click twice it should change the mode to light using java script event handeling
 
-let modeBtn = document.querySelector("#mode")
+/*let modeBtn = document.querySelector("#mode")
 let currMode = "light";
 let body = document.querySelector("body");
 
@@ -242,6 +242,9 @@ modeBtn.addEventListener("click", () => {
     console.log(currMode)
     
 })
+*/
+
+
 
 
 

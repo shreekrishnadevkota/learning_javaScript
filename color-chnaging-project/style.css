@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding:0;
+    border: 0;
+}
+.text{
+    justify-content: center;
+    text-align: center;
+}
+/* Center the container itself and stack everything nicely */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the heading and button container horizontally */
+  justify-content: center;
+  min-height: 100vh;   /* Centers everything vertically on the screen */
+  margin: 0;
+  background-color: #212121; /* Match your current dark theme */
+  color: white;
+  font-family: sans-serif;
+}
+
+/* The magic for the buttons */
+.button-container {
+  display: flex;       /* Turns on flexbox layout */
+  justify-content: center; /* Centers buttons horizontally inside the container */
+  gap: 20px;          /* Adds a perfectly even 20px gap between each button */
+  margin-top: 20px;    /* Adds space between the title and the buttons */
+}
+
+/* Optional styling to make the buttons look cleaner */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}

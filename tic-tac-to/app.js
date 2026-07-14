@@ -61,6 +61,10 @@ const showWiner = (winner) => {
 
 };
 
+const gameDw = () => {
+    
+}
+
 const checkWinner = () => {
     for (pattern of winPatterns){
         let pos1val = boxes[pattern[0]].innerText;
@@ -75,6 +79,5 @@ const checkWinner = () => {
         }
     }
 };
-
 newGameBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
